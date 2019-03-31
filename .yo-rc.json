@@ -1,0 +1,43 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "blog",
+            "nativeLanguage": "en"
+        },
+        "jhipsterVersion": "5.8.2",
+        "applicationType": "monolith",
+        "baseName": "blogchain",
+        "packageName": "blog",
+        "packageFolder": "blog",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "ehcache",
+        "enableHibernateCache": true,
+        "websocket": false,
+        "databaseType": "sql",
+        "devDatabaseType": "h2Disk",
+        "prodDatabaseType": "postgresql",
+        "searchEngine": false,
+        "messageBroker": false,
+        "serviceDiscoveryType": false,
+        "buildTool": "gradle",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "MmI2MmE5YWE4ZDMyNzUxZTBiYzc0YTA2ODY0YWQyNzA4YzYxYWRiZTFmMTA4NDg2NzU0OWU0MzdmYzE2NDIyYmI1MmMzYzZlYmQ2MGZhNTdiZTBhMDgzNTUzYTI3MmE5ZTY1ZGZiOTBlMTY4ZGQ5ZDM0MWVmZjhjYzRlY2RiYWI=",
+        "clientFramework": "angularX",
+        "useSass": true,
+        "clientPackageManager": "npm",
+        "testFrameworks": ["gatling", "cucumber", "protractor"],
+        "jhiPrefix": "jhi",
+        "entitySuffix": "",
+        "dtoSuffix": "DTO",
+        "otherModules": [
+            {
+                "name": "generator-jhipster-blockchain",
+                "version": "0.0.1"
+            }
+        ],
+        "enableTranslation": true,
+        "nativeLanguage": "en",
+        "languages": ["en", "fr"]
+    }
+}
