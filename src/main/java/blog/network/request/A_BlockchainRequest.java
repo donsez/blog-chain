@@ -4,6 +4,7 @@ import org.hyperledger.fabric.sdk.Channel;
 import org.hyperledger.fabric.sdk.EventHub;
 import org.hyperledger.fabric.sdk.Orderer;
 import org.hyperledger.fabric.sdk.Peer;
+import org.springframework.beans.factory.annotation.Value;
 
 import blog.network.CAClient;
 import blog.network.ChannelClient;
@@ -17,6 +18,20 @@ public abstract class A_BlockchainRequest {
 	protected FabricClient fabClient;
 	protected ChannelClient channelClient;
 	public String transactionID;
+
+    /**
+     * Name of eventhub should match peer's name it's associated with.
+     * @TODO should be a configurable properties
+     */
+    @Value("${hyperledger.eventhub.name}" )
+    private String eventHubName;
+    
+    /**
+     * The URL location of the event hub
+     * @TODO should be a configurable properties
+     */
+    @Value("${hyperledger.eventhub.url}" )
+    private String grpcURL;
 
 	public String result;
 
@@ -49,7 +64,7 @@ public abstract class A_BlockchainRequest {
 			Channel channel = channelClient.getChannel();
 
 			Peer peer = fabClient.getInstance().newPeer(Config.ORG1_PEER_0, Config.ORG1_PEER_0_URL);
-			EventHub eventHub = fabClient.getInstance().newEventHub("eventhub01", "grpc://localhost:7053");
+			EventHub eventHub = fabClient.getInstance().newEventHub(eventHubName, grpcURL);
 			Orderer orderer = fabClient.getInstance().newOrderer(Config.ORDERER_NAME, Config.ORDERER_URL);
 			channel.addPeer(peer);
 			channel.addEventHub(eventHub);
