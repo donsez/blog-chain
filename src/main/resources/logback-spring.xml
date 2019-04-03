@@ -56,6 +56,9 @@
     <logger name="sun.rmi" level="WARN"/>
     <logger name="liquibase" level="WARN"/>
     <logger name="LiquibaseSchemaResolver" level="INFO"/>
+    <logger name="io" level="WARN"/>
+<logger name="i.n.h.c.http2.Http2ConnectionHandler" level="WARN"/>
+
     <logger name="sun.rmi.transport" level="WARN"/>
 
     <!-- https://logback.qos.ch/manual/configuration.html#shutdownHook and https://jira.qos.ch/browse/LOGBACK-1090 -->

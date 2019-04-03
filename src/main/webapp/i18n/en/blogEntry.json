@@ -1,0 +1,25 @@
+{
+    "blogchainApp": {
+        "blogEntry": {
+            "home": {
+                "title": "Blog Entries",
+                "createLabel": "Create a new Blog Entry",
+                "createOrEditLabel": "Create or edit a Blog Entry"
+            },
+            "created": "A new Blog Entry is created with identifier {{ param }}",
+            "updated": "A Blog Entry is updated with identifier {{ param }}",
+            "deleted": "A Blog Entry is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Blog Entry {{ id }}?"
+            },
+            "detail": {
+                "title": "Blog Entry"
+            },
+            "title": "Title",
+            "content": "Content",
+            "date": "Date",
+            "blog": "Blog",
+            "tag": "Tag"
+        }
+    }
+}

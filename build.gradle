@@ -262,6 +262,8 @@ dependencies {
     testCompile "org.hamcrest:hamcrest-library"
     testCompile "com.h2database:h2"
     liquibaseRuntime "com.h2database:h2"
+    // https://mvnrepository.com/artifact/org.hyperledger.fabric-sdk-java/fabric-sdk-java
+compile group: 'org.hyperledger.fabric-sdk-java', name: 'fabric-sdk-java', version: '1.4.0'
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
 }
 

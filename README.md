@@ -2,6 +2,14 @@
 
 This application was generated using JHipster 5.8.2, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v5.8.2](https://www.jhipster.tech/documentation-archive/v5.8.2).
 
+This is a simple web application to manage entities on a blockchain using an Hyperledger Fabric network v1.4.
+
+When you create, update or delete entities using this sample application, requests are sent to the Hyperledger network to update the blockchain ledger. For this to happen, Hyperledger must be running.
+
+## Hyperledger
+
+To run this application you will need to run Hyperledger. See the readme in `./fabric-network/README.md` to know how.
+
 ## Development
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
