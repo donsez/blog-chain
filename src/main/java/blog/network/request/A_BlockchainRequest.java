@@ -15,23 +15,21 @@ import blog.network.Util;
 
 public abstract class A_BlockchainRequest {
 
-	protected FabricClient fabClient;
-	protected ChannelClient channelClient;
-	public String transactionID;
-
     /**
      * Name of eventhub should match peer's name it's associated with.
-     * @TODO should be a configurable properties
      */
     @Value("${hyperledger.eventhub.name}" )
     private String eventHubName;
     
     /**
      * The URL location of the event hub
-     * @TODO should be a configurable properties
      */
     @Value("${hyperledger.eventhub.url}" )
     private String grpcURL;
+    
+	protected FabricClient fabClient;
+	protected ChannelClient channelClient;
+	public String transactionID;
 
 	public String result;
 
